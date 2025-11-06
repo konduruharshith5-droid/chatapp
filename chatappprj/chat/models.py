@@ -12,5 +12,3 @@ class Message(models.Model):
     room = models.CharField(max_length=1000000)
     user = models.CharField(max_length=100000)
     
-
-
