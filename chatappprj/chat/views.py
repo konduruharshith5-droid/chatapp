@@ -9,7 +9,7 @@ def home(request):
 
 def room(request, room):
     username = request.GET.get("username")
-    room_details = Room.objects.get(name="room")
+    room_details = Room.objects.get(name=room)
     return render(request, "room.html", {
         "username": username,
         "room": room,
